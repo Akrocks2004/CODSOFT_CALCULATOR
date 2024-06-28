@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="extra.js"></script> <!-- Added defer to ensure the script loads after the HTML -->
+
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            background-image: url('calc.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center center; 
+        }
+        .text{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .flex{
+            display: flex;
+        }
+        .flex-col{
+            flex-direction: column;
+        }
+        .item-center{
+            align-items: center;
+            
+        }
+        .mx-auto{
+            margin: auto;
+        }       
+        .horizontally{
+            margin: 8px 0;
+        }
+        .horizontally input{
+            border: 2px solid black;
+            padding: 10px 0px;
+            margin: 0;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        button{
+            padding: 15px;
+            margin: 0 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">SIMPLE CALCULATOR</h1>
+    <div class="container flex flex-col item-center mx-auto">
+        <div class="horizontally">
+            <input class="input" type="text">
+        </div>
+        <div class="horizontally">
+            <button class="row">C</button>
+            <button class="row">(</button>
+            <button class="row">)</button>
+            <button class="row">M+</button>
+        </div>
+        <div class="horizontally">
+            <button class="row">7</button>
+            <button class="row">8</button>
+            <button class="row">9</button>
+            <button class="row">*</button>
+        </div>
+        <div class="horizontally">
+            <button class="row">4</button>
+            <button class="row">5</button>
+            <button class="row">6</button>
+            <button class="row">/</button>
+        </div>
+        <div class="horizontally">
+            <button class="row">1</button>
+            <button class="row">2</button>
+            <button class="row">3</button>
+            <button class="row">-</button>
+        </div>
+        <div class="horizontally">
+            <button class="row">0</button>
+            <button class="row">.</button>
+            <button class="row">=</button>
+            <button class="row">%</button>
+        </div>
+    </div>
+</body>
+</html>
